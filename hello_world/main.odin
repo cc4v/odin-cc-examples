@@ -4,7 +4,7 @@
 
 package main
 
-import "shared:cc"
+import cc "../cc"
 
 main :: proc() {
 	cc.run(draw)

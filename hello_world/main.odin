@@ -6,8 +6,11 @@ package main
 
 // import cc "../cc"
 import cc "shared:cc"
+import util "../example_util"
 
 main :: proc() {
+	util.debug_tracking_allocator_init() // this is unnecessary
+
 	cc.run(draw)
 }
 

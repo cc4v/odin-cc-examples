@@ -15,20 +15,26 @@ main :: proc() {
 	util.debug_tracking_allocator_init() // this is unnecessary
 
 	cc.on_init(setup)
+	cc.on_exit(on_exit)
 	cc.run(draw)
 }
 
 setup :: proc() {
-	err: bool
-	image, err = cc.load_image("assets/sample.png")
+	img, err := cc.load_image("assets/sample.png")
 
 	if err != false {
 		fmt.eprintfln("[Error] Failed to load image")
-		runtime.exit(1)
+		// runtime.exit(1)
 	}
+
+	image = img
 }
 
 draw :: proc(){
-	cc.image(image, 0, 0)
-	cc.image_with_size(image, 60, 0, 50, 100)
+	cc.image(&image, 0, 0)
+	cc.image_with_size(&image, 60, 0, 50, 100)
+}
+
+on_exit :: proc () {
+	cc.delete_image(&image)
 }

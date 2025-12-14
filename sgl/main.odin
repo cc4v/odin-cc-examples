@@ -15,6 +15,8 @@ main :: proc() {
 }
 
 draw :: proc() {
+	// shows rainbow triangles
+
 	sgl.begin_triangles()
 	sgl.v2f_c3b(-0.5, -0.5, 255, 0, 0)
 	sgl.v2f_c3b(0.0, 0.5, 0, 255, 0)

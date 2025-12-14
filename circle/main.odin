@@ -4,7 +4,7 @@
 
 package main
 
-import "core:fmt"
+// import "core:fmt"
 import "shared:cc"
 import "shared:cc/colors"
 

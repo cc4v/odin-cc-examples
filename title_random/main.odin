@@ -6,7 +6,7 @@ package main
 
 import "core:math/rand"
 import "shared:cc"
-import util "../../example_util"
+import util "../example_util"
 
 main :: proc() {
 	util.debug_tracking_allocator_init() // this is unnecessary

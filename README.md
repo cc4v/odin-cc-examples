@@ -1,7 +1,7 @@
 # odin-cc-examples
 
 > [!WARNING]
-> ***WORK IN PROGRESS*** (Currently at very early stage)
+> Currently at very early stage. Please check [docs/coverage.md of odin-cc](https://github.com/cc4v/odin-cc/blob/main/docs/coverage.md).
 
 Please install [odin-cc](https://github.com/cc4v/odin-cc) first.
 

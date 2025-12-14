@@ -12,14 +12,15 @@ main :: proc() {
 }
 
 draw :: proc () {
-	cc.text_size(100)
-
+	cc.text_size(10)
 	cc.set_color(colors.red)
 	cc.text("hello", 10, 10)
 
+	cc.text_size(20)
 	cc.set_color(colors.green)
-	cc.text("hello", 10, 20)
+	cc.text("hello", 10, 40)
 
+	cc.text_size(30)
 	cc.set_color(colors.blue)
-	cc.text("hello", 10, 30)
+	cc.text("hello", 10, 80)
 }

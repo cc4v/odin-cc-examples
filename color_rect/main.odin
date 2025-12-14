@@ -11,15 +11,15 @@ import "shared:cc/colors"
 main :: proc() {
     util.debug_tracking_allocator_init() // this is unnecessary
 
-	cc.run(draw)
+    cc.run(draw)
 }
 
 draw :: proc() {
     cc.fill()
-	cc.set_color(colors.red)
-	cc.rect(20, 20, 100, 100)
+    cc.set_color(colors.red)
+    cc.rect(20, 20, 100, 100)
 
-	cc.no_fill()
-	cc.set_color(colors.blue)
-	cc.rect(10, 10, 100, 100)
+    cc.no_fill()
+    cc.set_color(colors.blue)
+    cc.rect(10, 10, 100, 100)
 }

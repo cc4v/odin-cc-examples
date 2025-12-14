@@ -10,11 +10,12 @@ import "shared:cc/colors"
 
 main :: proc() {
     util.debug_tracking_allocator_init() // this is unnecessary
-    
+
 	cc.run(draw)
 }
 
 draw :: proc() {
+    cc.fill()
 	cc.set_color(colors.red)
 	cc.rect(20, 20, 100, 100)
 

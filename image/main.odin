@@ -7,6 +7,7 @@ package main
 import "base:runtime"
 import "core:fmt"
 import "shared:cc"
+import "shared:cc/colors"
 import util "../example_util"
 
 image: cc.Image
@@ -31,6 +32,7 @@ setup :: proc() {
 }
 
 draw :: proc(){
+	cc.set_color(colors.white)
 	cc.image(&image, 0, 0)
 	cc.image_with_size(&image, 60, 0, 50, 100)
 }

@@ -4,8 +4,7 @@
 
 package main
 
-// import cc "../cc"
-import cc "shared:cc"
+import "shared:cc"
 import util "../example_util"
 
 main :: proc() {

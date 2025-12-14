@@ -14,6 +14,6 @@ main :: proc() {
 	cc.run(draw)
 }
 
-draw :: proc(_: rawptr){
+draw :: proc(){
 	cc.text("hello world", 10, 10)
 }

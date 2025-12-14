@@ -11,7 +11,7 @@ main :: proc() {
 	cc.run(draw)
 }
 
-draw :: proc (_: rawptr){
+draw :: proc (){
 	cc.text_size(100)
 
 	cc.set_color(colors.red)

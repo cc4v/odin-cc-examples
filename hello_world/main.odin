@@ -15,5 +15,5 @@ main :: proc() {
 }
 
 draw :: proc(_: rawptr){
-	// cc.text("hello world", 10, 10)
+	cc.text("hello world", 10, 10)
 }

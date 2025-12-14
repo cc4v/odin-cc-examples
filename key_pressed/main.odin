@@ -7,8 +7,11 @@ package main
 import "core:fmt"
 import "shared:cc"
 import "shared:cc/colors"
+import util "../example_util"
 
 main :: proc () {
+	util.debug_tracking_allocator_init() // this is unnecessary
+
 	cc.run(draw)
 }
 
@@ -20,9 +23,10 @@ draw :: proc(){
 		cc.rect(10, 10, 100, 100)
 
 		cc.set_color(colors.white)
-		// cc.text("${cc.key()}", 30, 30)
-		str := fmt.tprint(cc.key())
+
+		str := fmt.aprint(cc.key())
 		cc.text(str, 30, 30)
+		delete(str)
 	} else {
 		cc.set_color(colors.white)
 		cc.rect(10, 10, 100, 100)

@@ -24,11 +24,16 @@ draw :: proc() {
 
 	cc.set_color(colors.white)
 
+	a := colors.color_u8_from_rgb(100, 250, 154)
+	b := colors.color_u8_from_rgb(247, 253, 236)
+	c := colors.color_u8_from_rgb(255, 94, 44)
+	d := colors.color_u8_from_rgb(119, 102, 229)
+
 	sgl.begin_quads()
-	sgl.v2f_c3b(0, 0, 100, 250, 154)
-	sgl.v2f_c3b(w, 0, 247, 253, 236)
-	sgl.v2f_c3b(w, h, 255, 94, 44)
-	sgl.v2f_c3b(0, h, 119, 102, 229)
+	sgl.v2f_c3b(0, 0, a.r, a.g, a.b)
+	sgl.v2f_c3b(w, 0, b.r, b.g, b.b)
+	sgl.v2f_c3b(w, h, c.r, c.g, c.b)
+	sgl.v2f_c3b(0, h, d.r, d.g, d.b)
 	sgl.end()
 
 	cc.set_color(colors.white)

@@ -17,9 +17,16 @@ main :: proc() {
 draw :: proc() {
 	// shows rainbow triangles
 
+	w := f32(cc.width())
+	h := f32(cc.height())
+	x1 := w * 0.25
+	y1 := h * 0.25
+	x2 := w * 0.75
+	y2 := h * 0.75
+
 	sgl.begin_triangles()
-	sgl.v2f_c3b(-0.5, -0.5, 255, 0, 0)
-	sgl.v2f_c3b(0.0, 0.5, 0, 255, 0)
-	sgl.v2f_c3b(0.5, -0.5, 0, 0, 255)
+	sgl.v2f_c3b(x1, y2, 255, 0, 0)
+	sgl.v2f_c3b((x1 + x2) / 2.0, y1, 0, 255, 0)
+	sgl.v2f_c3b(x2, y2, 0, 0, 255)
 	sgl.end()
 }

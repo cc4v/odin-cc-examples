@@ -18,15 +18,17 @@ main :: proc() {
 draw :: proc() {
 	// shows rainbow odin logo
 
-	d :: 1.0
+	// d :: 1.0
+	w := f32(cc.width())
+	h := f32(cc.height())
 
 	cc.set_color(colors.white)
 
 	sgl.begin_quads()
-	sgl.v2f_c3b(-d, -d, 100, 250, 154)
-	sgl.v2f_c3b(-d, d, 247, 253, 236)
-	sgl.v2f_c3b(d, d, 255, 94, 44)
-	sgl.v2f_c3b(d, -d, 119, 102, 229)
+	sgl.v2f_c3b(0, 0, 100, 250, 154)
+	sgl.v2f_c3b(w, 0, 247, 253, 236)
+	sgl.v2f_c3b(w, h, 255, 94, 44)
+	sgl.v2f_c3b(0, h, 119, 102, 229)
 	sgl.end()
 
 	cc.set_color(colors.white)

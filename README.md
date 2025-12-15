@@ -4,8 +4,8 @@
 
 (code of above: [logo_icon](./logo-icon/main.odin))
 
-> [!WARNING]
-> Currently at very early stage. Please check [docs/coverage.md of odin-cc](https://github.com/cc4v/odin-cc/blob/main/docs/coverage.md).
+> [!NOTE]
+> Please also check [docs/coverage.md of odin-cc](https://github.com/cc4v/odin-cc/blob/main/docs/coverage.md), as an Table of Content.
 
 Please install [odin-cc](https://github.com/cc4v/odin-cc) first.
 

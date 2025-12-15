@@ -7,9 +7,9 @@
 > [!NOTE]
 > Please also check [docs/coverage.md of odin-cc](https://github.com/cc4v/odin-cc/blob/main/docs/coverage.md), as an Table of Content.
 
-Please install [odin-cc](https://github.com/cc4v/odin-cc) first.
-
 ## Usage
+
+Please install [odin-cc](https://github.com/cc4v/odin-cc) first.
 
 ```bash
 $ git clone https://github.com/cc4v/odin-cc-examples

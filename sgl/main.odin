@@ -5,6 +5,7 @@
 package main
 
 import "shared:cc"
+import "shared:cc/colors"
 import sgl "shared:sokol/gl"
 import util "../example_util"
 
@@ -24,9 +25,13 @@ draw :: proc() {
 	x2 := w * 0.75
 	y2 := h * 0.75
 
+	r := cc.u8_color(colors.red)
+	g := cc.u8_color(colors.green)
+	b := cc.u8_color(colors.blue)
+
 	sgl.begin_triangles()
-	sgl.v2f_c3b(x1, y2, 255, 0, 0)
-	sgl.v2f_c3b((x1 + x2) / 2.0, y1, 0, 255, 0)
-	sgl.v2f_c3b(x2, y2, 0, 0, 255)
+	sgl.v2f_c3b(x1, y2, r.r, r.g, r.b)
+	sgl.v2f_c3b((x1 + x2) / 2.0, y1, g.r, g.g, g.b)
+	sgl.v2f_c3b(x2, y2, b.r, b.g, b.b)
 	sgl.end()
 }
